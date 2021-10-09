@@ -37,7 +37,7 @@ const FarmCards: React.FC = () => {
       ? stakedValue[cnftIndex].tokenPriceInWbnb
       : new BigNumber(0)
 
-  const BLOCKS_PER_YEAR = new BigNumber(2336000)
+  const BLOCKS_PER_YEAR = new BigNumber(10512000)
   const CNFT_PER_BLOCK = new BigNumber(1)
 
   const rows = farms.reduce<FarmWithStakedValue[][]>(
@@ -45,7 +45,7 @@ const FarmCards: React.FC = () => {
       const farmWithStakedValue = {
         ...farm,
         ...stakedValue[i],
-        apy: stakedValue[i]
+  apy: stakedValue[i]
           ? cnftPrice
               .times(CNFT_PER_BLOCK)
               .times(BLOCKS_PER_YEAR)
@@ -151,7 +151,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm }) => {
             <StyledInsight>
               <span><b>APY</b></span>
               <span style={{fontWeight: 'bold', color: '#4caf50'}}>
-                {farm.apyValue}
+                {farm.apyValue}%
               </span>
             </StyledInsight>
             <Spacer />

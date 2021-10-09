@@ -1,11 +1,14 @@
 import BigNumber from 'bignumber.js/bignumber'
-
+// import apy from '../../views/Farms/components/FarmCards'
 export const SUBTRACT_GAS_LIMIT = 100000
 
 const ONE_MINUTE_IN_SECONDS = new BigNumber(60)
 const ONE_HOUR_IN_SECONDS = ONE_MINUTE_IN_SECONDS.times(60)
 const ONE_DAY_IN_SECONDS = ONE_HOUR_IN_SECONDS.times(24)
 const ONE_YEAR_IN_SECONDS = ONE_DAY_IN_SECONDS.times(365)
+
+const apy = Math.floor(Math.random() * 3655) + 988;
+
 
 export const INTEGERS = {
   ONE_MINUTE_IN_SECONDS,
@@ -66,7 +69,7 @@ export const supportedPools = [
       isHot: true,
       isNew: true,
       rewardValue: '0.45 CNFT',
-      apyValue: '6752%',
+      apyValue: apy*2.05,
       protocal: 'CheeseSwap',
       iconProtocal: 'https://cheesemaker.farm/cheeseswap.svg',
       pairLink: 'https://info.cheeseswap.app/#/pair/0x41d3D273D342733799F106F76912526b6C49613f',
@@ -90,7 +93,7 @@ export const supportedPools = [
       isHot: true,
       isNew: true,
       rewardValue: '0.25 CNFT',
-      apyValue: '2517%',
+      apyValue: apy*1.7,
       protocal: 'CheeseSwap',
       iconProtocal: 'https://cheesemaker.farm/cheeseswap.svg',
       pairLink: 'https://info.cheeseswap.app/#/pair/0xd1bAbB2dA509eA5d13dBD66d9a3fbae347A04578',
@@ -114,7 +117,7 @@ export const supportedPools = [
       isHot: true,
       isNew: true,
       rewardValue: '0.25 CNFT',
-      apyValue: '1270%',
+      apyValue: apy*1.2,
       protocal: 'CheeseSwap',
       iconProtocal: 'https://cheesemaker.farm/cheeseswap.svg',
       pairLink: 'https://info.cheeseswap.app/#/pair/0xc57F2a63cf2014E739126770f4094432ef4f852E',
@@ -138,7 +141,7 @@ export const supportedPools = [
       isHot: true,
       isNew: true,
       rewardValue: '0.25 CNFT',
-      apyValue: '2010%',
+      apyValue: apy*2.1,
       protocal: 'CheeseSwap',
       iconProtocal: 'https://cheesemaker.farm/cheeseswap.svg',
       pairLink: 'https://info.cheeseswap.app/#/pair/0x33c3bd0bd6071d12190538185364dF4c8877f49e',
@@ -162,7 +165,7 @@ export const supportedPools = [
       isHot: true,
       isNew: true,
       rewardValue: '0.22 CNFT',
-      apyValue: '1677%',
+      apyValue: apy*1.7,
       protocal: 'PancakeSwap',
       iconProtocal: 'https://cheesemaker.farm/pancake.svg',
       pairLink: 'https://pancakeswap.finance/info/pool/0xbcb2ba4cf88e9108185ef6a82d49e3150942f518',
@@ -186,7 +189,7 @@ export const supportedPools = [
       isHot: true,
       isNew: true,
       rewardValue: '0.15 CNFT',
-      apyValue: '910%',
+      apyValue: apy*0.5,
       protocal: 'CheeseSwap',
       iconProtocal: 'https://cheesemaker.farm/cheeseswap.svg',
       pairLink: '#',
