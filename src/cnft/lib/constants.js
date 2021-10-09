@@ -158,7 +158,7 @@ export const supportedPools = [
       symbolShort: 'Cake-LP',
       tokenSymbol: 'CNFT',
       token2Symbol: 'USDT',
-      icon: 'https://cheesemaker.farm/cnft-usdt-pck.svg',
+      icon: 'https://cheesemaker.farm/Cake-LP.svg',
       isHot: true,
       isNew: true,
       rewardValue: '0.22 CNFT',
