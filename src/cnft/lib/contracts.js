@@ -4,6 +4,7 @@ import MasterChefAbi from './abi/masterChef.json'
 import CnftAbi from './abi/cnft.json'
 import CheeseSwapPairAbi from './abi/uni_v2_lp.json'
 import WBNBAbi from './abi/wbnb.json'
+import PancakeSwapPairABI from './abi/pck_v2_lp.json'
 import {
   contractAddresses,
   SUBTRACT_GAS_LIMIT,
@@ -29,7 +30,7 @@ export class Contracts {
       Object.assign(pool, {
         lpAddress: pool.lpAddresses[networkId],
         tokenAddress: pool.tokenAddresses[networkId],
-        lpContract: new this.web3.eth.Contract(CheeseSwapPairAbi),
+        lpContract: new this.web3.eth.Contract(CheeseSwapPairAbi) || new this.web3.eth.Contract(PancakeSwapPairABI) ,
         tokenContract: new this.web3.eth.Contract(ERC20Abi),
       }),
     )

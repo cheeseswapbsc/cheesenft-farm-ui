@@ -8,9 +8,9 @@ const Nav: React.FC = () => {
       <StyledLink exact activeClassName="active" to="/">
         Home
       </StyledLink>
-      <StyledLink exact activeClassName="active" to="https://nft.cheeseswap.app/create">
+      <StyledAbsoluteLink href="https://nft.cheeseswap.app/create" target="_blank" rel="noopener noreferrer">
         NFT ArtRoom
-      </StyledLink>
+      </StyledAbsoluteLink>
       <StyledAbsoluteLink
         href="https://cheeseswap.app"
         target="_blank"
