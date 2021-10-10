@@ -258,9 +258,6 @@ export default function Footer() {
           <img src={BuiltBSC} alt="Binance Smart Chain" height="64" />
         </StyledAbsoluteImg>
       </FooterWrapper2>
-      <Title>
-        TVL
-      </Title>
       <FooterWrapper2>
       <TitleTvl>
        <b> Total Value Locked (TVL): {tvl}&nbsp;$ </b>
