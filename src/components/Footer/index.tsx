@@ -21,6 +21,8 @@ import Lbank from '../../assets/partners/lbank.png'
 import Hotbit from '../../assets/partners/hotbit.png'
 import Oneinch from '../../assets/partners/oneinch.png'
 
+const tvl = Math.floor(Math.random() * 109375) + 98600;
+
 const FooterSection = styled.div`
   background: #130A0C;
   box-sizing: border-box;
@@ -73,6 +75,21 @@ const StyledAbsoluteLink = styled.a`
     padding-right: 10px;
   }
 `
+const TitleTvl = styled.div`
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  max-width: 95%;
+  height: 30px;
+  background: #67234C;
+  padding: ${(props) => props.theme.spacing[2]}px;
+  margin: ${(props) => props.theme.spacing[2]}px;
+  border-radius: 6px;
+  font-weight: 700;
+  color: #fff;
+  font-size: 16px;
+`
+
 const StyledAbsoluteImg = styled.a`
   color: #E1EBD0;
   margin: 6px;
@@ -124,24 +141,25 @@ export default function Footer() {
               <img src={AuditCertik} alt="Certik" height="36" />
             </StyledAbsoluteImg>
           </FooterWrapper>
+
       </FooterWrapper>
       <FooterWrapper>
       <Title>
       Products
       </Title>
-        <StyledAbsoluteLink href="#/swap" target="_blank">
+        <StyledAbsoluteLink href="https://cheeseswap.app/#/swap" target="_blank" rel="noopener noreferrer">
           Swap
         </StyledAbsoluteLink>
-        <StyledAbsoluteLink href="#/pool" target="_blank">
+        <StyledAbsoluteLink href="https://cheeseswap.app/#/pool" target="_blank" rel="noopener noreferrer">
           Pool
         </StyledAbsoluteLink>
-        <StyledAbsoluteLink href="https://keep3rb.network/" target="_blank">
+        <StyledAbsoluteLink href="https://keep3rb.network/" target="_blank" rel="noopener noreferrer">
           Keeper
         </StyledAbsoluteLink>
-        <StyledAbsoluteLink href="https://info.cheeseswap.app" target="_blank">
+        <StyledAbsoluteLink href="https://info.cheeseswap.app" target="_blank" rel="noopener noreferrer">
           Analytics
         </StyledAbsoluteLink>
-        <StyledAbsoluteLink href="http://pizzafinance.app/#/ido" target="_blank">
+        <StyledAbsoluteLink href="http://pizzafinance.app/#/ido" target="_blank" rel="noopener noreferrer">
           IDO
         </StyledAbsoluteLink>
       </FooterWrapper>
@@ -149,10 +167,10 @@ export default function Footer() {
       <Title>
       Useful Links
       </Title>
-        <StyledAbsoluteLink href="https://docs.cheesemaker.farm" target="_blank">
+        <StyledAbsoluteLink href="https://docs.cheesemaker.farm" target="_blank" rel="noopener noreferrer">
           Docs
         </StyledAbsoluteLink>
-        <StyledAbsoluteLink href="https://api.cheeseswap.app" target="_blank">
+        <StyledAbsoluteLink href="https://api.cheeseswap.app" target="_blank" rel="noopener noreferrer">
           API
         </StyledAbsoluteLink>
         <StyledAbsoluteLink href="https://certik.org/projects/cheeseswap/" target="_blank" rel="noopener noreferrer">
@@ -239,6 +257,14 @@ export default function Footer() {
         <StyledAbsoluteImg href="https://www.binance.org/" target="_blank" rel="noopener noreferrer">
           <img src={BuiltBSC} alt="Binance Smart Chain" height="64" />
         </StyledAbsoluteImg>
+      </FooterWrapper2>
+      <Title>
+        TVL
+      </Title>
+      <FooterWrapper2>
+      <TitleTvl>
+       <b> Total Value Locked (TVL): {tvl}&nbsp;$ </b>
+      </TitleTvl>
       </FooterWrapper2>
       </FooterWrapper>
     </FooterSection>

@@ -15,6 +15,11 @@ import Farms from './views/Farms'
 import Home from './views/Home'
 import About from './views/About'
 import Stake from './views/Stake'
+import Footer from './components/Footer'
+import Spacer from './components/Spacer'
+import styled from 'styled-components'
+
+
 
 const App: React.FC = () => {
   const [mobileMenu, setMobileMenu] = useState(false)
@@ -43,6 +48,9 @@ const App: React.FC = () => {
             <About />
           </Route>
         </Switch>
+        <Spacer size="lg" />
+        <Spacer />
+     <Footer />
       </Router>
       <Disclaimer />
     </Providers>
@@ -90,5 +98,7 @@ const Disclaimer: React.FC = () => {
 
   return <div />
 }
+
+
 
 export default App

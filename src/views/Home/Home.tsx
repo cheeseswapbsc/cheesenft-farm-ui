@@ -8,7 +8,7 @@ import Spacer from '../../components/Spacer'
 import Balances from './components/Balances'
 import cnft from '../../assets/img/cnft-supply.svg'
 import Farms from '../Farms'
-import Footer from '../../components/Footer'
+const tvl = Math.floor(Math.random() * 109375) + 98600;
 
 
 const Home: React.FC = () => {
@@ -28,8 +28,7 @@ const Home: React.FC = () => {
       </Container>
       <Spacer size="lg" />
       <Spacer />
-     <Footer />
-    </Page>
+      </Page>
   )
 }
 
