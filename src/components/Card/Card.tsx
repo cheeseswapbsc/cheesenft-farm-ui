@@ -8,7 +8,7 @@ const Card: React.FC = ({ children }) => (
 )
 
 const StyledCard = styled.div`
-  background: ${props => props.theme.color.grey[200]};
+  background: #130A0C;
   border-radius: 10px;
   display: flex;
   flex: 1;

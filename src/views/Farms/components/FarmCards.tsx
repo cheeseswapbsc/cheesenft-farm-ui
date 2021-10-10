@@ -140,7 +140,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm }) => {
           <div style={{display: 'flex'}}>
             <CardIcon><img src={farm.icon} alt="" height="80"/></CardIcon>
           </div>
-              <StyledTitle>{farm.name}</StyledTitle>
+              <StyledTitle>{farm.name}</StyledTitle> <p><StyledTitle>______________________</StyledTitle></p>
           <StyledInsight><span><b>Deposit</b></span> <span>{farm.name}</span></StyledInsight>
             <StyledInsight>
               <span><b>Reward</b></span>
@@ -152,6 +152,18 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm }) => {
               <span><b>APY</b></span>
               <span style={{fontWeight: 'bold', color: '#4caf50'}}>
                 {farm.apyValue}%
+              </span>
+            </StyledInsight>
+            <StyledInsight>
+              <span><b>Pair</b></span>
+              <span style={{fontWeight: 'bold', color: '#4caf50'}}>
+                {farm.name}
+              </span>
+            </StyledInsight>
+            <StyledInsight>
+              <span><b>Earning</b></span>
+              <span style={{fontWeight: 'bold', color: '#4caf50'}}>
+                {farm.tokenSymbol}
               </span>
             </StyledInsight>
             <Spacer />

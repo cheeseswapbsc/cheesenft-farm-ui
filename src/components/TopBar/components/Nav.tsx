@@ -2,7 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 
-const tvl = Math.floor(Math.random() * 109375) + 98600;
+
 
 const Nav: React.FC = () => {
   return (
@@ -28,9 +28,7 @@ const Nav: React.FC = () => {
       >
         NFT (Beta)
       </StyledAbsoluteLink>
-    <Title>
-   <b>  POOL TVL: {tvl}&nbsp;$ </b>
-    </Title>
+
     </StyledNav>
   )
 }
@@ -43,19 +41,7 @@ const StyledNav = styled.nav`
     justify-content: center;
   }
 `
-const Title = styled.div`
-  align-items: center;
-  display: flex;
-  max-width: 25%;
-  height: 30px;
-  background: #67234C;
-  padding: ${(props) => props.theme.spacing[2]}px;
-  margin: ${(props) => props.theme.spacing[2]}px;
-  border-radius: 6px;
-  font-weight: 700;
-  color: #fff;
-  font-size: 16px;
-`
+
 
 const StyledLink = styled(NavLink)`
   color: ${(props) => props.theme.color.grey[400]};

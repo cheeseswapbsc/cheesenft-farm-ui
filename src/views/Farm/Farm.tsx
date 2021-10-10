@@ -165,7 +165,7 @@ const StyledHeading = styled.h2`
 const StyledInfoLP = styled.div`
   display: flex;
   padding: 15px 10px;
-  background: #292d31;
+  background: #130A0C;
   border-radius: 12px;
 `
 

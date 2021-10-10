@@ -14,7 +14,7 @@ import useModal from '../../hooks/useModal'
 import Farm from '../Farm'
 
 import FarmCards from './components/FarmCards'
-
+const tvl = Math.floor(Math.random() * 199375) + 118600;
 const Farms: React.FC = () => {
   const { path } = useRouteMatch()
   const { account } = useWallet()
@@ -25,16 +25,11 @@ const Farms: React.FC = () => {
         {!!account ? (
           <>
             <Route exact path={path}>
-              <PageHeader
-                icon={<img src={cnft} height="128" />}
-                subtitle="Earn CNFT tokens by staking CNFT LP Tokens."
-                title="Select Your Favorite CNFT"
-              />
-              <Container>
-              <StyledInfoLP>
-              <div style={{ color: '#b1b8bf', fontSize: 14, marginLeft: 20, marginRight: 20}}> CNFTArtist is Ready to serve. We hope Our journey through Binance Smart Chain will be smooth. Don't miss to grab cheap CNFT, CNFT from CheeseSwap Liquidity Pool Buy
-              </div>
-               </StyledInfoLP>
+            <br /> <br /> <br />
+            <Container>
+            <TitleTvl>
+           <b> 💰💰 Total Value Locked (TVL): {tvl}&nbsp;$ </b>
+            </TitleTvl>
                </Container>
                <Spacer size="lg" />
               <FarmCards />
@@ -69,6 +64,20 @@ const StyledInfoLP = styled.div`
   background: #292d31;
   border-radius: 10px;
   text-align: center;
+`
+const TitleTvl = styled.div`
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  max-width: 100%;
+  height: 45px;
+  background: #130A0C;
+  padding: ${(props) => props.theme.spacing[2]}px;
+  margin-top: 25px;
+  border-radius: 10px;
+  font-weight: 700;
+  color: #DF922B;
+  font-size: 24px;
 `
 
 export default Farms
