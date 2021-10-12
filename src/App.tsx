@@ -1,5 +1,8 @@
-import React, { useCallback, useEffect, useState } from 'react'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+// import React, { useCallback, useEffect, useState } from 'react'
+// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+
+import React, { Suspense, useEffect, lazy, useState, useCallback } from 'react'
+import { HashRouter, Route, Switch } from 'react-router-dom'
 import { ThemeProvider } from 'styled-components'
 import { UseWalletProvider } from 'use-wallet'
 import DisclaimerModal from './components/DisclaimerModal'
@@ -33,8 +36,11 @@ const App: React.FC = () => {
   }, [setMobileMenu])
 
   return (
+    <Suspense fallback={null}>
+ 
     <Providers>
-      <Router>
+      <HashRouter>
+      
         <TopBar onPresentMobileMenu={handlePresentMobileMenu} />
         <MobileMenu onDismiss={handleDismissMobileMenu} visible={mobileMenu} />
         <Switch>
@@ -51,9 +57,10 @@ const App: React.FC = () => {
         <Spacer size="lg" />
         <Spacer />
      <Footer />
-      </Router>
+      </HashRouter>
       <Disclaimer />
     </Providers>
+    </Suspense>
   )
 }
 

@@ -171,31 +171,7 @@ export const supportedPools = [
           pairLink: 'https://pancakeswap.finance/info/pool/0x4a1cee9FCa9de287d93e3281C12879e3aec5F594',
           addLiquidityLink: 'https://pancakeswap.finance/info/pool/0x4a1cee9FCa9de287d93e3281C12879e3aec5F594'
         },
-    {
-      pid: 5,
-      lpAddresses: {
-        56: '0xBCB2bA4Cf88E9108185EF6A82d49E3150942f518',
-      },
-      tokenAddresses: {
-        56: '0xc6D866628B5A1C63E196557C1BA189211b779F64',
-      },
-      name: 'Cake-LP',
-      symbol: 'Cake-LP',
-      symbolShort: 'Cake-LP',
-      tokenSymbol: 'CNFT',
-      token2Symbol: 'USDT',
-      icon: '/Cake-LP.svg',
-      isHot: true,
-      isNew: true,
-      rewardValue: '0.22 CNFT',
-      apyValue: apy*1.7,
-      protocal: 'PancakeSwap',
-      iconProtocal: 'https://cheesemaker.farm/pancake.svg',
-      pairLink: 'https://pancakeswap.finance/info/pool/0xbcb2ba4cf88e9108185ef6a82d49e3150942f518',
-      addLiquidityLink: 'https://pancakeswap.finance/add/0x55d398326f99059ff775485246999027b3197955/0xc6d866628b5a1c63e196557c1ba189211b779f64'
-    },
-
-         {
+             {
       pid: 0,
       lpAddresses: {
         56: '0xc6D866628B5A1C63E196557C1BA189211b779F64',
